@@ -186,3 +186,36 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main-profiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.mid-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.mid-section .CTA-banner {
+  border: 2px solid black;
+}
+.mid-section .mid-boxes {
+  border: 2px solid black;
+}
+.mid-section .mid-boxes .mid-box-1 {
+  border: 2px solid black;
+}
+.mid-section .mid-boxes .mid-box-2 {
+  border: 2px solid black;
+}
+.mid-section .mid-boxes .mid-box-3 {
+  border: 2px solid black;
+}
+.mid-banner {
+  border: 2px solid black;
+}
+.skills-section {
+  border: 2px solid black;
+}

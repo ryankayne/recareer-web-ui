@@ -1,3 +1,29 @@
 .tshoot() {
     border: 2px solid black;
 }
+
+.fcenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-design (@button-bg, @width: 200px, @btn-text: white) {
+    display: block;
+    background-color: @button-bg;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @btn-text;
+
+    @media @mobile {
+        width: 100px;
+    }
+
+    &:hover{
+        background-color: @btn-text;
+        color: @button-bg;
+      }
+    }
