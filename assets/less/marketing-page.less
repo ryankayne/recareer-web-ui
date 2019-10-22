@@ -2,75 +2,17 @@
 main {
     margin: 0 auto;
     max-width: 1200px;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-
-
-    .main-profiles {
-        .fcenter();
-        .tshoot();
-        flex-direction: column;
-
-        div {
-
-            h2 {
-
-            }
-        }
-
-        .profile-1 {
-            .fcenter();
-            .tshoot();
-
-            div {
-
-                img {
-                    max-width: 300px;
-                    height: auto;
-                    padding: 2rem;
-                    border-radius: 4rem;
-                }
-            }
-
-            div {
-                padding: 2rem;
-
-                p {
-                    font-size: 2rem;
-                }
-            }
-        } //end .profile-1
-
-        .profile-2 {
-            .fcenter();
-            .tshoot();
-
-            div {
-                padding: 2rem;
-
-                p {
-                    font-size: 2rem;
-                }
-            }
-
-            div {
-
-                img {
-
-                    max-width: 500px;
-                    height: auto;
-                    padding: 2rem;
-                    border-radius: 4rem;
-                }
-            }
-        } // end .profile-2
-    } // end .main-section
+    background-color: #9ece9a;
 
     .mid-section {
         .fcenter();
         .tshoot();
         flex-direction: column;
+        background-color: @background;
 
         .CTA-banner {
             .fcenter();
@@ -80,21 +22,21 @@ main {
             .statement2 {
 
                 h2 {
-
+                    font-family: @slabo;
                 }
             }
 
             div {
 
                 h1{
-
+                    font-family: @slabo;
                 }
             }
 
             .CTA-button {
 
                 button {
-
+                    margin: 2rem;
                 }
             } //ends .CTA-button
         } // ends .CTA-banner
@@ -113,7 +55,11 @@ main {
                 }
 
                 .mid-box-text {
+                    padding: 2rem;
 
+                    p {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 div {
@@ -121,7 +67,7 @@ main {
                     
 
                     button {
-
+                        margin: 2rem;
                     }
                 }
                 
@@ -137,7 +83,11 @@ main {
                 }
 
                 .mid-box-text {
-
+                    padding: 2rem;
+                    
+                    p {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 div {
@@ -145,7 +95,7 @@ main {
                     
 
                     button {
-
+                        margin: 2rem;
                     }
                 }
             } //ends .mid-box-2
@@ -160,7 +110,11 @@ main {
                 }
 
                 .mid-box-text {
-
+                    padding: 2rem;
+                    
+                    p {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 div {
@@ -168,7 +122,7 @@ main {
                     
 
                     button {
-
+                        margin: 2rem;
                     }
                 }
             } //ends .mid-box-3
@@ -177,6 +131,8 @@ main {
 
     .mid-banner {
         .tshoot();
+        margin: 10rem;
+
         div {
 
             p {
@@ -187,6 +143,7 @@ main {
 
     .skills-section {
         .tshoot();
+
 
         div {
             h2 {

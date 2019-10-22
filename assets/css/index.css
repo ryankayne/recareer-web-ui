@@ -189,52 +189,11 @@ img {
 main {
   margin: 0 auto;
   max-width: 1200px;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-main .main-profiles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  flex-direction: column;
-}
-main .main-profiles .profile-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-}
-main .main-profiles .profile-1 div img {
-  max-width: 300px;
-  height: auto;
-  padding: 2rem;
-  border-radius: 4rem;
-}
-main .main-profiles .profile-1 div {
-  padding: 2rem;
-}
-main .main-profiles .profile-1 div p {
-  font-size: 2rem;
-}
-main .main-profiles .profile-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-}
-main .main-profiles .profile-2 div {
-  padding: 2rem;
-}
-main .main-profiles .profile-2 div p {
-  font-size: 2rem;
-}
-main .main-profiles .profile-2 div img {
-  max-width: 500px;
-  height: auto;
-  padding: 2rem;
-  border-radius: 4rem;
+  background-color: #9ece9a;
 }
 main .mid-section {
   display: flex;
@@ -242,6 +201,7 @@ main .mid-section {
   align-items: center;
   border: 2px solid black;
   flex-direction: column;
+  background-color: #f2f5ea;
 }
 main .mid-section .CTA-banner {
   display: flex;
@@ -249,6 +209,15 @@ main .mid-section .CTA-banner {
   align-items: center;
   border: 2px solid black;
   flex-direction: column;
+}
+main .mid-section .CTA-banner .statement2 h2 {
+  font-family: 'Slabo 13px', serif;
+}
+main .mid-section .CTA-banner div h1 {
+  font-family: 'Slabo 13px', serif;
+}
+main .mid-section .CTA-banner .CTA-button button {
+  margin: 2rem;
 }
 main .mid-section .mid-boxes {
   display: flex;
@@ -263,10 +232,19 @@ main .mid-section .mid-boxes .mid-box-1 {
   flex-direction: column;
   border: 2px solid black;
 }
+main .mid-section .mid-boxes .mid-box-1 .mid-box-text {
+  padding: 2rem;
+}
+main .mid-section .mid-boxes .mid-box-1 .mid-box-text p {
+  font-size: 1.4rem;
+}
 main .mid-section .mid-boxes .mid-box-1 div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main .mid-section .mid-boxes .mid-box-1 div button {
+  margin: 2rem;
 }
 main .mid-section .mid-boxes .mid-box-2 {
   display: flex;
@@ -275,10 +253,19 @@ main .mid-section .mid-boxes .mid-box-2 {
   flex-direction: column;
   border: 2px solid black;
 }
+main .mid-section .mid-boxes .mid-box-2 .mid-box-text {
+  padding: 2rem;
+}
+main .mid-section .mid-boxes .mid-box-2 .mid-box-text p {
+  font-size: 1.4rem;
+}
 main .mid-section .mid-boxes .mid-box-2 div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main .mid-section .mid-boxes .mid-box-2 div button {
+  margin: 2rem;
 }
 main .mid-section .mid-boxes .mid-box-3 {
   display: flex;
@@ -287,13 +274,23 @@ main .mid-section .mid-boxes .mid-box-3 {
   flex-direction: column;
   border: 2px solid black;
 }
+main .mid-section .mid-boxes .mid-box-3 .mid-box-text {
+  padding: 2rem;
+}
+main .mid-section .mid-boxes .mid-box-3 .mid-box-text p {
+  font-size: 1.4rem;
+}
 main .mid-section .mid-boxes .mid-box-3 div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+main .mid-section .mid-boxes .mid-box-3 div button {
+  margin: 2rem;
+}
 main .mid-banner {
   border: 2px solid black;
+  margin: 10rem;
 }
 main .skills-section {
   border: 2px solid black;
