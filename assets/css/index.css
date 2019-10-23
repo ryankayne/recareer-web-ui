@@ -186,10 +186,78 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70rem;
+  width: 100%;
+  background-color: #077187;
+}
+header .hero-banner .main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  padding-left: 3%;
+  flex-direction: column;
+  color: white;
+}
+header .hero-banner .main-title h1 {
+  font-family: 'Slabo 13px', serif;
+  font-size: 5rem;
+  line-height: 1.2;
+}
+header .hero-banner .main-title h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 2rem;
+  padding-top: 2rem;
+  line-height: 1.7;
+}
+header .hero-banner .main-title .CTA {
+  margin-top: 5%;
+}
+header .hero-banner .main-title .CTA button {
+  display: block;
+  background-color: #f2f5ea;
+  cursor: pointer;
+  width: 220px;
+  height: 60px;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: #083d77;
+}
+@media (max-width: 500px) {
+  header .hero-banner .main-title .CTA button {
+    width: 100px;
+  }
+}
+header .hero-banner .main-title .CTA button:hover {
+  background-color: #083d77;
+  color: #f2f5ea;
+}
+header .hero-banner .hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+header .hero-banner .hero-img img {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: auto;
+}
 main {
   margin: 0 auto;
-  max-width: 1200px;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

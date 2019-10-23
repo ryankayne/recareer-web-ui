@@ -8,22 +8,22 @@
     align-items: center;
 }
 
-.btn-design (@button-bg, @width: 200px, @btn-text: white) {
+.btn-design (@background, @width: 200px, @primary: white) {
     display: block;
-    background-color: @button-bg;
+    background-color: @background;
     cursor: pointer;
     width: @width;
-    height: 45px;
+    height: 60px;
     font-size: 2rem;
-    border-radius: 10px;
-    color: @btn-text;
+    border-radius: 30px;
+    color: @primary;
 
     @media @mobile {
         width: 100px;
     }
 
     &:hover{
-        background-color: @btn-text;
-        color: @button-bg;
+        background-color: @primary;
+        color: @background;
       }
     }

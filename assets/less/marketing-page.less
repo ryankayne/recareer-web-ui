@@ -1,165 +1,220 @@
 
+header {
+    .fcenter();
+
+    .hero-banner {
+        .fcenter();
+        height: 70rem;
+        width: 100%;
+        background-color: @metallic-seaweed;
+
+        .main-title {
+            .fcenter();
+            width: 50%;
+            height: auto;
+            padding-left: 3%;
+            flex-direction: column;
+            color: white;
+
+            h1 {
+                font-family: @slabo;
+                font-size: 5rem;
+                line-height: 1.2;
+            }
+
+            h2 {
+                font-family: @heebo;
+                font-size: 2rem;
+                padding-top: 2rem;
+                line-height: 1.7;
+            }
+
+            .CTA {
+                margin-top: 5%;
+                button {
+                    .btn-design(@background, 220px, @primary);
+                }
+            }
+            
+        }
+
+        .hero-img {
+            .fcenter();
+            width: 50%;
+            height: auto;
+            
+            img {
+                max-width: 500px;
+                max-height: 500px;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    } // ends .hero-banner
+} // ends header
+
+
 main {
     margin: 0 auto;
-    max-width: 1200px;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
     background-color: #9ece9a;
 
-    .mid-section {
-        .fcenter();
-        .tshoot();
-        flex-direction: column;
-        background-color: @background;
-
-        .CTA-banner {
+        .mid-section {
             .fcenter();
             .tshoot();
             flex-direction: column;
+            background-color: @background;
 
-            .statement2 {
+            .CTA-banner {
+                .fcenter();
+                .tshoot();
+                flex-direction: column;
 
+                .statement2 {
+
+                    h2 {
+                        font-family: @slabo;
+                    }
+                }
+
+                div {
+
+                    h1{
+                        font-family: @slabo;
+                    }
+                }
+
+                .CTA-button {
+
+                    button {
+                        margin: 2rem;
+                    }
+                } //ends .CTA-button
+            } // ends .CTA-banner
+
+            .mid-boxes {
+                .fcenter();
+                .tshoot();
+
+                .mid-box-1 {
+                    .fcenter();
+                    flex-direction: column;
+                    .tshoot();
+
+                    div {
+
+                    }
+
+                    .mid-box-text {
+                        padding: 2rem;
+
+                        p {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    div {
+                        .fcenter();
+                        
+
+                        button {
+                            margin: 2rem;
+                        }
+                    }
+                    
+                } //ends .mid-box-1
+
+                .mid-box-2 {
+                    .fcenter();
+                    flex-direction: column;
+                    .tshoot();
+
+                    div {
+
+                    }
+
+                    .mid-box-text {
+                        padding: 2rem;
+                        
+                        p {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    div {
+                        .fcenter();
+                        
+
+                        button {
+                            margin: 2rem;
+                        }
+                    }
+                } //ends .mid-box-2
+
+                .mid-box-3 {
+                    .fcenter();
+                    flex-direction: column;
+                    .tshoot();
+
+                    div {
+
+                    }
+
+                    .mid-box-text {
+                        padding: 2rem;
+                        
+                        p {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    div {
+                        .fcenter();
+                        
+
+                        button {
+                            margin: 2rem;
+                        }
+                    }
+                } //ends .mid-box-3
+            } //ends .mid-boxes
+        } // ends .mid-section
+
+        .mid-banner {
+            .tshoot();
+            margin: 10rem;
+
+            div {
+
+                p {
+
+                }
+            }
+        } // ends .mid-banner
+
+        .skills-section {
+            .tshoot();
+
+
+            div {
                 h2 {
-                    font-family: @slabo;
+
                 }
             }
 
             div {
+                h2 {
 
-                h1{
-                    font-family: @slabo;
                 }
             }
-
-            .CTA-button {
-
-                button {
-                    margin: 2rem;
-                }
-            } //ends .CTA-button
-        } // ends .CTA-banner
-
-        .mid-boxes {
-            .fcenter();
-            .tshoot();
-
-            .mid-box-1 {
-                .fcenter();
-                flex-direction: column;
-                .tshoot();
-
-                div {
+            div {
+                h2 {
 
                 }
-
-                .mid-box-text {
-                    padding: 2rem;
-
-                    p {
-                        font-size: 1.4rem;
-                    }
-                }
-
-                div {
-                    .fcenter();
-                    
-
-                    button {
-                        margin: 2rem;
-                    }
-                }
-                
-            } //ends .mid-box-1
-
-            .mid-box-2 {
-                .fcenter();
-                flex-direction: column;
-                .tshoot();
-
-                div {
-
-                }
-
-                .mid-box-text {
-                    padding: 2rem;
-                    
-                    p {
-                        font-size: 1.4rem;
-                    }
-                }
-
-                div {
-                    .fcenter();
-                    
-
-                    button {
-                        margin: 2rem;
-                    }
-                }
-            } //ends .mid-box-2
-
-            .mid-box-3 {
-                .fcenter();
-                flex-direction: column;
-                .tshoot();
-
-                div {
-
-                }
-
-                .mid-box-text {
-                    padding: 2rem;
-                    
-                    p {
-                        font-size: 1.4rem;
-                    }
-                }
-
-                div {
-                    .fcenter();
-                    
-
-                    button {
-                        margin: 2rem;
-                    }
-                }
-            } //ends .mid-box-3
-        } //ends .mid-boxes
-    } // ends .mid-section
-
-    .mid-banner {
-        .tshoot();
-        margin: 10rem;
-
-        div {
-
-            p {
-
             }
-        }
-    } // ends .mid-banner
-
-    .skills-section {
-        .tshoot();
-
-
-        div {
-            h2 {
-
-            }
-        }
-
-        div {
-            h2 {
-
-            }
-        }
-        div {
-            h2 {
-
-            }
-        }
-    } //ends .skills-section
+        } //ends .skills-section
 } // ends main
