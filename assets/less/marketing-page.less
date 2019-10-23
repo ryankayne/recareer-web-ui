@@ -59,6 +59,7 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center; 
     
     background-color: #9ece9a;
@@ -106,16 +107,19 @@ main {
             .mid-boxes {
                 .fcenter();
                 .tshoot();
-                width: 100%;
+                width: 90%;
                 height: 50%;
+                
 
                 .mid-box-1 {
                     .fcenter();
                     flex-direction: column;
+                    max-width: 470px;
+                    max-height: 530px;
                     .tshoot();
 
                     div {
-                        padding: 10% 0;
+                        padding: 4rem 0;
 
                         i {
                             font-size: 12rem;
@@ -126,12 +130,16 @@ main {
                     .mid-box-text {
                         padding: 2rem;
 
+                        h3 {
+                            text-align: center;
+                            font-size: 3rem;
+                        }
                         p {
                             font-size: 1.4rem;
                         }
                     }
 
-                    div {
+                    .btn {
                         .fcenter();
                         
 
@@ -145,10 +153,12 @@ main {
                 .mid-box-2 {
                     .fcenter();
                     flex-direction: column;
+                    max-width: 470px;
+                    max-height: 530px;
                     .tshoot();
 
                     div {
-                        padding: 10% 0;
+                        padding: 4rem 0;
                         
                         i {
                             font-size: 12rem;
@@ -159,12 +169,17 @@ main {
                     .mid-box-text {
                         padding: 2rem;
                         
+                        h3 {
+                            text-align: center;
+                            font-size: 3rem;
+                        }
+
                         p {
                             font-size: 1.4rem;
                         }
                     }
 
-                    div {
+                    .btn {
                         .fcenter();
                         
 
@@ -177,10 +192,12 @@ main {
                 .mid-box-3 {
                     .fcenter();
                     flex-direction: column;
+                    max-width: 470px;
+                    max-height: 530px;
                     .tshoot();
 
                     div {
-                        padding: 10% 0;
+                        padding: 4rem 0;
                         
                         i {
                             font-size: 12rem;
@@ -192,12 +209,16 @@ main {
                     .mid-box-text {
                         padding: 2rem;
                         
+                        h3 {
+                            text-align: center;
+                            font-size: 3rem;
+                        }
                         p {
                             font-size: 1.4rem;
                         }
                     }
 
-                    div {
+                    .btn {
                         .fcenter();
                         
 
@@ -211,12 +232,14 @@ main {
 
         .mid-banner {
             .tshoot();
-            margin: 10rem;
+            .fcenter();
+            width: 90%;
 
             div {
 
                 p {
-
+                    font-size: 2.5rem;
+                    font-family: @montserrat;
                 }
             }
         } // ends .mid-banner

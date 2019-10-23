@@ -260,6 +260,7 @@ main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   background-color: #9ece9a;
 }
@@ -315,7 +316,7 @@ main .mid-section .mid-boxes {
   justify-content: center;
   align-items: center;
   border: 2px solid black;
-  width: 100%;
+  width: 90%;
   height: 50%;
 }
 main .mid-section .mid-boxes .mid-box-1 {
@@ -323,10 +324,12 @@ main .mid-section .mid-boxes .mid-box-1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 470px;
+  max-height: 530px;
   border: 2px solid black;
 }
 main .mid-section .mid-boxes .mid-box-1 div {
-  padding: 10% 0;
+  padding: 4rem 0;
 }
 main .mid-section .mid-boxes .mid-box-1 div i {
   font-size: 12rem;
@@ -334,15 +337,19 @@ main .mid-section .mid-boxes .mid-box-1 div i {
 main .mid-section .mid-boxes .mid-box-1 .mid-box-text {
   padding: 2rem;
 }
+main .mid-section .mid-boxes .mid-box-1 .mid-box-text h3 {
+  text-align: center;
+  font-size: 3rem;
+}
 main .mid-section .mid-boxes .mid-box-1 .mid-box-text p {
   font-size: 1.4rem;
 }
-main .mid-section .mid-boxes .mid-box-1 div {
+main .mid-section .mid-boxes .mid-box-1 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .mid-section .mid-boxes .mid-box-1 div button {
+main .mid-section .mid-boxes .mid-box-1 .btn button {
   margin: 2rem;
 }
 main .mid-section .mid-boxes .mid-box-2 {
@@ -350,10 +357,12 @@ main .mid-section .mid-boxes .mid-box-2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 470px;
+  max-height: 530px;
   border: 2px solid black;
 }
 main .mid-section .mid-boxes .mid-box-2 div {
-  padding: 10% 0;
+  padding: 4rem 0;
 }
 main .mid-section .mid-boxes .mid-box-2 div i {
   font-size: 12rem;
@@ -361,15 +370,19 @@ main .mid-section .mid-boxes .mid-box-2 div i {
 main .mid-section .mid-boxes .mid-box-2 .mid-box-text {
   padding: 2rem;
 }
+main .mid-section .mid-boxes .mid-box-2 .mid-box-text h3 {
+  text-align: center;
+  font-size: 3rem;
+}
 main .mid-section .mid-boxes .mid-box-2 .mid-box-text p {
   font-size: 1.4rem;
 }
-main .mid-section .mid-boxes .mid-box-2 div {
+main .mid-section .mid-boxes .mid-box-2 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .mid-section .mid-boxes .mid-box-2 div button {
+main .mid-section .mid-boxes .mid-box-2 .btn button {
   margin: 2rem;
 }
 main .mid-section .mid-boxes .mid-box-3 {
@@ -377,10 +390,12 @@ main .mid-section .mid-boxes .mid-box-3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 470px;
+  max-height: 530px;
   border: 2px solid black;
 }
 main .mid-section .mid-boxes .mid-box-3 div {
-  padding: 10% 0;
+  padding: 4rem 0;
 }
 main .mid-section .mid-boxes .mid-box-3 div i {
   font-size: 12rem;
@@ -388,20 +403,31 @@ main .mid-section .mid-boxes .mid-box-3 div i {
 main .mid-section .mid-boxes .mid-box-3 .mid-box-text {
   padding: 2rem;
 }
+main .mid-section .mid-boxes .mid-box-3 .mid-box-text h3 {
+  text-align: center;
+  font-size: 3rem;
+}
 main .mid-section .mid-boxes .mid-box-3 .mid-box-text p {
   font-size: 1.4rem;
 }
-main .mid-section .mid-boxes .mid-box-3 div {
+main .mid-section .mid-boxes .mid-box-3 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .mid-section .mid-boxes .mid-box-3 div button {
+main .mid-section .mid-boxes .mid-box-3 .btn button {
   margin: 2rem;
 }
 main .mid-banner {
   border: 2px solid black;
-  margin: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+main .mid-banner div p {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 main .skills-section {
   border: 2px solid black;
