@@ -74,32 +74,67 @@ main {
                 width: 90%;
                 height: 45rem;
                 margin: 5% 0;
-                flex-direction: column;
                 background-color: white;
                 border-radius: 3rem;
                 box-shadow: 0px 10px 10px 2px grey;
 
-                .statement2 {
+                .CTA-left {
+                    width:40%;
+                    .fcenter();
+                    flex-direction: column;
+                    
+                
+                    .statement2 {
 
-                    h2 {
-                        font-family: @slabo;
+                        h2 {
+                            font-family: @slabo;
+                        }
                     }
-                }
 
-                div {
+                    div {
 
-                    h1{
-                        font-family: @slabo;
+                        h1{
+                            font-family: @slabo;
+                        }
                     }
-                }
 
-                .CTA {
+                    .CTA {
 
-                    button {
-                        margin: 2rem;
-                        .btn-design(@primary, 220px, white);
-                    }
-                } //ends .CTA
+                        button {
+                            margin: 2rem;
+                            .btn-design(@primary, 220px, white);
+                        }
+                    } //ends .CTA
+                } // ends .CTA-left
+
+                .CTA-right {
+                    .cool-flip();
+                    width: 60%;
+                    flex-direction: row;
+                    max-height: 50vh;
+                    .tshoot();
+
+                    .job-photos {
+                        .fcenter();
+                        .Job1 {
+                            width: 50%;
+
+                            .job1a {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+
+                        .Job2 {
+                            width: 50%;
+
+                            .job2a {
+                                width: 100%;
+                            }
+                        }
+
+                    } //ends .job-photos
+                } //ends .CTA-right
             } // ends .CTA-banner
         } // ends .top
 
@@ -165,6 +200,7 @@ main {
                         }
                         p {
                             font-size: 1.4rem;
+                            font-family: @montserrat;
                         }
                     }
 
@@ -212,6 +248,7 @@ main {
 
                         p {
                             font-size: 1.4rem;
+                            font-family: @montserrat;
                         }
                     }
 
@@ -258,6 +295,7 @@ main {
                         }
                         p {
                             font-size: 1.4rem;
+                            font-family: @montserrat;
                         }
                     }
 
@@ -274,22 +312,4 @@ main {
             } //ends .mid-boxes
         } // ends .mid-section
 
-        .mid-banner {
-            .tshoot();
-            .fcenter();
-            background-color: @dark-cerulian;
-            width: 100%;
-            height: 40rem;
-
-            .mid-banner-text {
-                width: 90%;
-
-                p {
-                    font-size: 2.5rem;
-                    font-family: @montserrat;
-                }
-            }
-        } // ends .mid-banner
-
-        
 } // ends main
