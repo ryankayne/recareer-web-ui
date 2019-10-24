@@ -8,13 +8,14 @@ header {
         width: 100%;
         background-color: @metallic-seaweed;
 
-        @media @desktop {
-            height: 60rem;
-        }
 
         @media @tablet {
-            height: 100vh;
+        //     height: 70vh;
             flex-direction: column;
+        }
+
+        @media @mobile {
+            height: 60rem;
         }
 
         
@@ -34,14 +35,25 @@ header {
             @media @tablet {
                 width: 70%;
                 padding: 0;
-                padding-top: 1%;
-                
+                padding-top: 10%;                
+            }
+
+            @media @mobile {
+                padding: 0;
             }
 
             h1 {
                 font-family: @slabo;
                 font-size: 4vw;
                 line-height: 1.2;
+
+                @media @tablet {
+                    font-size: 4.2rem;
+                }
+
+                @media @mobile {
+                    font-size: 3.8rem;
+                }
                 
             }
 
@@ -51,6 +63,13 @@ header {
                 padding-top: 2rem;
                 line-height: 1.7;
 
+                @media @tablet {
+                    font-size: 1.5rem;
+                }
+
+                @media @mobile {
+                    font-size: 1.4rem;
+                }
 
             }
 
@@ -144,6 +163,10 @@ main {
                         h2 {
                             font-family: @slabo;
                             font-size: 3.5vw;
+
+                            @media @mobile {
+                                font-size: 3rem;
+                            }
                         }
                     }
 
@@ -152,6 +175,10 @@ main {
                         h1{
                             font-family: @slabo;
                             font-size: 3.5vw;
+
+                            @media @mobile {
+                                font-size: 3.5rem;
+                            }
                         }
                     }
 
@@ -273,15 +300,30 @@ main {
             flex-direction: column;
             background-color: @metallic-seaweed;
 
+            @media @tablet {
+                height: auto;
+            }
+
             .mid-heading {
                 width: 100%;
-                padding: 2rem;
-                margin: 4rem 0;
+                height: 20vh;
+                padding: 1rem;
+                margin-top: 8rem;
                 background-color: @metallic-seaweed;
                 .fcenter();
+
+                @media @tablet {
+                    height: 12vh;
+                    margin-top: 1rem;
+
+                }
+
+                @media @mobile {
+                    margin: 0;
+                }
                 
                 h2 {
-                    font-size: 4.2vw;
+                    font-size: 4rem;
                     font-family: @slabo;
                     color: @background;
                 }
@@ -291,6 +333,7 @@ main {
                 .fcenter();
                 
                 width: 100%;
+                height: auto;
                 padding-top: 4rem;
                 background-color: @background;
 
@@ -355,9 +398,14 @@ main {
                             font-size: 2.8vw;
                             padding-bottom: 1rem;
 
+                            @media @tablet {
+                                font-size: 2.2rem;
+                                padding-bottom: 1rem;
+                            }
+
                         }
                         p {
-                            font-size: 1vw;
+                            font-size: 1.5rem;
                             font-family: @montserrat;
                         }
                     }
@@ -424,10 +472,17 @@ main {
                             font-size: 2.8vw;
                             padding-bottom: 1rem;
 
+                            @media @tablet {
+                                font-size: 2.2rem;
+                                padding-bottom: 1rem;
+                            }
+
                         }
                         p {
-                            font-size: 1vw;
+                            font-size: 1.5rem;
                             font-family: @montserrat;
+
+                            
                         }
                     }
 
@@ -488,9 +543,14 @@ main {
                             font-size: 2.8vw;
                             padding-bottom: 1rem;
 
+                            @media @tablet {
+                                font-size: 2.2rem;
+                                padding-bottom: 1rem;
+                            }
+
                         }
                         p {
-                            font-size: 1vw;
+                            font-size: 1.5rem;
                             font-family: @montserrat;
                         }
                     }

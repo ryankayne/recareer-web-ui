@@ -199,15 +199,14 @@ header .hero-banner {
   width: 100%;
   background-color: #077187;
 }
-@media (max-width: 1000px) {
-  header .hero-banner {
-    height: 60rem;
-  }
-}
 @media (max-width: 800px) {
   header .hero-banner {
-    height: 100vh;
     flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  header .hero-banner {
+    height: 60rem;
   }
 }
 header .hero-banner .main-title {
@@ -229,7 +228,12 @@ header .hero-banner .main-title {
   header .hero-banner .main-title {
     width: 70%;
     padding: 0;
-    padding-top: 1%;
+    padding-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  header .hero-banner .main-title {
+    padding: 0;
   }
 }
 header .hero-banner .main-title h1 {
@@ -237,11 +241,31 @@ header .hero-banner .main-title h1 {
   font-size: 4vw;
   line-height: 1.2;
 }
+@media (max-width: 800px) {
+  header .hero-banner .main-title h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 500px) {
+  header .hero-banner .main-title h1 {
+    font-size: 3.8rem;
+  }
+}
 header .hero-banner .main-title h2 {
   font-family: 'Heebo', sans-serif;
   font-size: 1.5vw;
   padding-top: 2rem;
   line-height: 1.7;
+}
+@media (max-width: 800px) {
+  header .hero-banner .main-title h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  header .hero-banner .main-title h2 {
+    font-size: 1.4rem;
+  }
 }
 header .hero-banner .main-title .CTA {
   margin-top: 5%;
@@ -352,9 +376,19 @@ main .top .CTA-banner .CTA-left .statement2 h2 {
   font-family: 'Slabo 13px', serif;
   font-size: 3.5vw;
 }
+@media (max-width: 500px) {
+  main .top .CTA-banner .CTA-left .statement2 h2 {
+    font-size: 3rem;
+  }
+}
 main .top .CTA-banner .CTA-left div h1 {
   font-family: 'Slabo 13px', serif;
   font-size: 3.5vw;
+}
+@media (max-width: 500px) {
+  main .top .CTA-banner .CTA-left div h1 {
+    font-size: 3.5rem;
+  }
 }
 main .top .CTA-banner .CTA-left .CTA button {
   margin: 2rem;
@@ -504,17 +538,34 @@ main .mid-section {
   flex-direction: column;
   background-color: #077187;
 }
+@media (max-width: 800px) {
+  main .mid-section {
+    height: auto;
+  }
+}
 main .mid-section .mid-heading {
   width: 100%;
-  padding: 2rem;
-  margin: 4rem 0;
+  height: 20vh;
+  padding: 1rem;
+  margin-top: 8rem;
   background-color: #077187;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  main .mid-section .mid-heading {
+    height: 12vh;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  main .mid-section .mid-heading {
+    margin: 0;
+  }
+}
 main .mid-section .mid-heading h2 {
-  font-size: 4.2vw;
+  font-size: 4rem;
   font-family: 'Slabo 13px', serif;
   color: #f2f5ea;
 }
@@ -523,6 +574,7 @@ main .mid-section .mid-boxes {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   padding-top: 4rem;
   background-color: #f2f5ea;
 }
@@ -591,8 +643,14 @@ main .mid-section .mid-boxes .mid-box-1 .mid-box-text h3 {
   font-size: 2.8vw;
   padding-bottom: 1rem;
 }
+@media (max-width: 800px) {
+  main .mid-section .mid-boxes .mid-box-1 .mid-box-text h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+  }
+}
 main .mid-section .mid-boxes .mid-box-1 .mid-box-text p {
-  font-size: 1vw;
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 main .mid-section .mid-boxes .mid-box-1 .btn {
@@ -673,8 +731,14 @@ main .mid-section .mid-boxes .mid-box-2 .mid-box-text h3 {
   font-size: 2.8vw;
   padding-bottom: 1rem;
 }
+@media (max-width: 800px) {
+  main .mid-section .mid-boxes .mid-box-2 .mid-box-text h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+  }
+}
 main .mid-section .mid-boxes .mid-box-2 .mid-box-text p {
-  font-size: 1vw;
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 main .mid-section .mid-boxes .mid-box-2 .btn {
@@ -750,8 +814,14 @@ main .mid-section .mid-boxes .mid-box-3 .mid-box-text h3 {
   font-size: 2.8vw;
   padding-bottom: 1rem;
 }
+@media (max-width: 800px) {
+  main .mid-section .mid-boxes .mid-box-3 .mid-box-text h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+  }
+}
 main .mid-section .mid-boxes .mid-box-3 .mid-box-text p {
-  font-size: 1vw;
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 main .mid-section .mid-boxes .mid-box-3 .btn {
