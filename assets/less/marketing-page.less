@@ -8,6 +8,8 @@ header {
         width: 100%;
         background-color: @metallic-seaweed;
 
+        
+
         .main-title {
             .fcenter();
             width: 50%;
@@ -15,6 +17,10 @@ header {
             padding-left: 3%;
             flex-direction: column;
             color: white;
+
+            @media @desktop {
+                width: 48%;
+            }
 
             h1 {
                 font-family: @slabo;
@@ -41,6 +47,10 @@ header {
             .fcenter();
             width: 50%;
             height: auto;
+
+            @media @desktop {
+                width: 48%;
+            }
             
             .hero-img-1 {
                 max-width: 500px;
@@ -78,10 +88,19 @@ main {
                 border-radius: 3rem;
                 box-shadow: 0px 10px 10px 2px grey;
 
+                @media @tablet {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 .CTA-left {
                     width: 50%;
                     .fcenter();
                     flex-direction: column;
+
+                    @media @tablet {
+                        width: 100%;
+                    }
                     
                 
                     .statement2 {
@@ -114,6 +133,10 @@ main {
                     width: 50%;
                     flex-direction: row;
                     max-height: 50vh;
+
+                    @media @desktop {
+
+                    }
                     
 
                     .job-photos {
@@ -132,34 +155,54 @@ main {
                                     .front {
                                         
                                         .job1a {
-                                            width: 40rem;
+                                            width: 40vw;
                                             height: auto;
                                             max-width: none;
                                             border-radius: 2rem;
+
+                                            @media @tablet {
+                                                margin-top: 10%;
+                                                width: 45vw;
+                                            }
                                             
                                         }
 
                                         .job1b {
-                                            width: 50rem;
+                                            width: 40vw;
                                             height: auto;
                                             max-width: none;
+
+                                            @media @tablet {
+                                                margin-top: 10%;
+                                                width: 45vw;
+                                            }
                                         }
                                     }
 
                                     .back {
                                         
                                         .job1a {
-                                            width: 50rem;
+                                            width: 40vw;
                                             height: auto;
                                             max-width: none;
+
+                                            @media @tablet {
+                                                margin-top: 10%;
+                                                width: 45vw;
+                                            }
                                             
                                         }
 
                                         .job1b {
-                                            width: 40rem;
+                                            width: 40vw;
                                             height: auto;
                                             max-width: none;
                                             border-radius: 2rem;
+
+                                            @media @tablet {
+                                                margin-top: 10%;
+                                                width: 45vw;
+                                            }
                                         }
                                     }                                
                                 }
@@ -198,8 +241,16 @@ main {
                 width: 100%;
                 padding-top: 4rem;
                 background-color: @background;
+
+                @media @desktop {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
                 
-                
+                @media @tablet {
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 .mid-box-1 {
                     .fcenter();
@@ -210,7 +261,17 @@ main {
                     min-height: 500px;
                     max-height: 530px;
 
-                    
+                    @media @desktop {
+                        min-width: 0;
+                        max-width: 470px;
+                        min-height: 0;
+                        max-height: 530px;
+                    }
+
+                    @media @tablet {
+                        display: flex;
+                        
+                    }
 
                     div {
                         padding: 2rem 0;
@@ -218,18 +279,49 @@ main {
                         i {
                             font-size: 12rem;
 
+                            @media @desktop {
+                                font-size: 10rem;
+                            }
+
+                            @media @tablet {
+                                font-size: 6rem;
+                            }
+
+                            @media @mobile {
+                                font-size: 4rem;
+                            }
+
                         }
                     }
 
                     .mid-box-text {
                         padding: 2rem;
+                        padding-bottom: 0;
                         width: 325px;
                         height: 237px;
+
+                        @media @desktop {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @media @tablet {
+                            width: 500px;
+                            height: auto;
+                        }
 
                         h3 {
                             text-align: center;
                             font-size: 3rem;
                             padding-bottom: 1rem;
+
+                            @media @desktop {
+                                font-size: 2.5rem;
+                            }
+
+                            @media @tablet {
+                                font-size: 2.2rem;
+                            }
                         }
                         p {
                             font-size: 1.4rem;
@@ -239,6 +331,10 @@ main {
 
                     .btn {
                         .fcenter();
+
+                        @media @tablet {
+                            padding: 0;
+                        }
                         
 
                         button {
@@ -257,13 +353,31 @@ main {
                     max-width: 470px;
                     min-height: 500px;
                     max-height: 530px;
-                    
+
+                    @media @desktop {
+                        min-width: 0;
+                        max-width: 470px;
+                        min-height: 0;
+                        max-height: 530px;
+                    }
 
                     div {
                         padding: 2rem 0;
                         
                         i {
                             font-size: 12rem;
+
+                            @media @desktop {
+                                font-size: 10rem;
+                            }
+
+                            @media @tablet {
+                                font-size: 6rem;
+                            }
+
+                            @media @mobile {
+                                font-size: 4rem;
+                            }
 
                         }
                     }
@@ -272,11 +386,25 @@ main {
                         padding: 2rem;
                         width: 325px;
                         height: 237px;
+
+                        @media @desktop {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @media @tablet {
+                            width: 500px;
+                            height: auto;
+                        }
                         
                         h3 {
                             text-align: center;
                             font-size: 3rem;
                             padding-bottom: 1rem;
+
+                            @media @desktop {
+                                font-size: 2.5rem;
+                            }
                         }
 
                         p {
@@ -304,13 +432,31 @@ main {
                     max-width: 470px;
                     min-height: 500px;
                     max-height: 530px;
-                    
+
+                    @media @desktop {
+                        min-width: 0;
+                        max-width: 470px;
+                        min-height: 0;
+                        max-height: 530px;
+                    }                    
 
                     div {
                         padding: 2rem 0;
                         
                         i {
                             font-size: 12rem;
+
+                            @media @desktop {
+                                font-size: 10rem;
+                            }
+
+                            @media @tablet {
+                                font-size: 6rem;
+                            }
+
+                            @media @mobile {
+                                font-size: 4rem;
+                            }
 
                         }
 
@@ -320,11 +466,25 @@ main {
                         padding: 2rem;
                         width: 325px;
                         height: 237px;
+
+                        @media @desktop {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @media @tablet {
+                            width: 500px;
+                            height: auto;
+                        }
                         
                         h3 {
                             text-align: center;
                             font-size: 3rem;
                             padding-bottom: 1rem;
+
+                            @media @desktop {
+                                font-size: 2.5rem;
+                            }
                         }
                         p {
                             font-size: 1.4rem;
