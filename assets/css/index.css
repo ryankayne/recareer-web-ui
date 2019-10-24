@@ -199,6 +199,17 @@ header .hero-banner {
   width: 100%;
   background-color: #077187;
 }
+@media (max-width: 1000px) {
+  header .hero-banner {
+    height: 60rem;
+  }
+}
+@media (max-width: 800px) {
+  header .hero-banner {
+    height: 100vh;
+    flex-direction: column;
+  }
+}
 header .hero-banner .main-title {
   display: flex;
   justify-content: center;
@@ -214,14 +225,21 @@ header .hero-banner .main-title {
     width: 48%;
   }
 }
+@media (max-width: 800px) {
+  header .hero-banner .main-title {
+    width: 70%;
+    padding: 0;
+    padding-top: 1%;
+  }
+}
 header .hero-banner .main-title h1 {
   font-family: 'Slabo 13px', serif;
-  font-size: 5rem;
+  font-size: 4vw;
   line-height: 1.2;
 }
 header .hero-banner .main-title h2 {
   font-family: 'Heebo', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5vw;
   padding-top: 2rem;
   line-height: 1.7;
 }
@@ -264,6 +282,24 @@ header .hero-banner .hero-img .hero-img-1 {
   max-height: 500px;
   width: 100%;
   height: auto;
+}
+@media (max-width: 1000px) {
+  header .hero-banner .hero-img .hero-img-1 {
+    max-width: 450px;
+    max-height: 450px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  header .hero-banner .hero-img .hero-img-1 {
+    max-width: 380px;
+    max-height: 380px;
+    width: 100%;
+    height: auto;
+    margin: 2%;
+    margin-top: 4%;
+  }
 }
 main {
   margin: 0 auto;
@@ -314,9 +350,11 @@ main .top .CTA-banner .CTA-left {
 }
 main .top .CTA-banner .CTA-left .statement2 h2 {
   font-family: 'Slabo 13px', serif;
+  font-size: 3.5vw;
 }
 main .top .CTA-banner .CTA-left div h1 {
   font-family: 'Slabo 13px', serif;
+  font-size: 3.5vw;
 }
 main .top .CTA-banner .CTA-left .CTA button {
   margin: 2rem;
@@ -328,6 +366,7 @@ main .top .CTA-banner .CTA-left .CTA button {
   font-size: 2rem;
   border-radius: 30px;
   color: white;
+  box-shadow: 0px 10px 10px 2px grey;
 }
 @media (max-width: 800px) {
   main .top .CTA-banner .CTA-left .CTA button {
@@ -394,11 +433,19 @@ main .top .CTA-banner .CTA-right .job-photos {
 main .top .CTA-banner .CTA-right .job-photos .Job1 {
   width: 100%;
 }
+@media (max-width: 500px) {
+  main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front .job1a {
   width: 40vw;
   height: auto;
   max-width: none;
   border-radius: 2rem;
+  box-shadow: 0px 10px 10px 2px grey;
 }
 @media (max-width: 800px) {
   main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front .job1a {
@@ -406,10 +453,16 @@ main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .fro
     width: 45vw;
   }
 }
+@media (max-width: 500px) {
+  main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front .job1a {
+    width: 70vw;
+  }
+}
 main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front .job1b {
   width: 40vw;
   height: auto;
   max-width: none;
+  box-shadow: 0px 10px 10px 2px grey;
 }
 @media (max-width: 800px) {
   main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front .job1b {
@@ -421,6 +474,7 @@ main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .bac
   width: 40vw;
   height: auto;
   max-width: none;
+  box-shadow: 0px 10px 10px 2px grey;
 }
 @media (max-width: 800px) {
   main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .back .job1a {
@@ -433,6 +487,7 @@ main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .bac
   height: auto;
   max-width: none;
   border-radius: 2rem;
+  box-shadow: 0px 10px 10px 2px grey;
 }
 @media (max-width: 800px) {
   main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .back .job1b {
@@ -444,7 +499,7 @@ main .mid-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: 90vh;
   width: 100%;
   flex-direction: column;
   background-color: #077187;
@@ -459,7 +514,7 @@ main .mid-section .mid-heading {
   align-items: center;
 }
 main .mid-section .mid-heading h2 {
-  font-size: 4rem;
+  font-size: 4.2vw;
   font-family: 'Slabo 13px', serif;
   color: #f2f5ea;
 }
@@ -511,22 +566,7 @@ main .mid-section .mid-boxes .mid-box-1 div {
   padding: 2rem 0;
 }
 main .mid-section .mid-boxes .mid-box-1 div i {
-  font-size: 12rem;
-}
-@media (max-width: 1000px) {
-  main .mid-section .mid-boxes .mid-box-1 div i {
-    font-size: 10rem;
-  }
-}
-@media (max-width: 800px) {
-  main .mid-section .mid-boxes .mid-box-1 div i {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 500px) {
-  main .mid-section .mid-boxes .mid-box-1 div i {
-    font-size: 4rem;
-  }
+  font-size: 10vw;
 }
 main .mid-section .mid-boxes .mid-box-1 .mid-box-text {
   padding: 2rem;
@@ -548,21 +588,11 @@ main .mid-section .mid-boxes .mid-box-1 .mid-box-text {
 }
 main .mid-section .mid-boxes .mid-box-1 .mid-box-text h3 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8vw;
   padding-bottom: 1rem;
 }
-@media (max-width: 1000px) {
-  main .mid-section .mid-boxes .mid-box-1 .mid-box-text h3 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 800px) {
-  main .mid-section .mid-boxes .mid-box-1 .mid-box-text h3 {
-    font-size: 2.2rem;
-  }
-}
 main .mid-section .mid-boxes .mid-box-1 .mid-box-text p {
-  font-size: 1.4rem;
+  font-size: 1vw;
   font-family: 'Montserrat', sans-serif;
 }
 main .mid-section .mid-boxes .mid-box-1 .btn {
@@ -577,6 +607,7 @@ main .mid-section .mid-boxes .mid-box-1 .btn {
 }
 main .mid-section .mid-boxes .mid-box-1 .btn button {
   margin: 2rem;
+  box-shadow: 0px 10px 10px 2px grey;
   display: block;
   background-color: #083d77;
   cursor: pointer;
@@ -618,22 +649,7 @@ main .mid-section .mid-boxes .mid-box-2 div {
   padding: 2rem 0;
 }
 main .mid-section .mid-boxes .mid-box-2 div i {
-  font-size: 12rem;
-}
-@media (max-width: 1000px) {
-  main .mid-section .mid-boxes .mid-box-2 div i {
-    font-size: 10rem;
-  }
-}
-@media (max-width: 800px) {
-  main .mid-section .mid-boxes .mid-box-2 div i {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 500px) {
-  main .mid-section .mid-boxes .mid-box-2 div i {
-    font-size: 4rem;
-  }
+  font-size: 10vw;
 }
 main .mid-section .mid-boxes .mid-box-2 .mid-box-text {
   padding: 2rem;
@@ -654,16 +670,11 @@ main .mid-section .mid-boxes .mid-box-2 .mid-box-text {
 }
 main .mid-section .mid-boxes .mid-box-2 .mid-box-text h3 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8vw;
   padding-bottom: 1rem;
 }
-@media (max-width: 1000px) {
-  main .mid-section .mid-boxes .mid-box-2 .mid-box-text h3 {
-    font-size: 2.5rem;
-  }
-}
 main .mid-section .mid-boxes .mid-box-2 .mid-box-text p {
-  font-size: 1.4rem;
+  font-size: 1vw;
   font-family: 'Montserrat', sans-serif;
 }
 main .mid-section .mid-boxes .mid-box-2 .btn {
@@ -673,6 +684,7 @@ main .mid-section .mid-boxes .mid-box-2 .btn {
 }
 main .mid-section .mid-boxes .mid-box-2 .btn button {
   margin: 2rem;
+  box-shadow: 0px 10px 10px 2px grey;
   display: block;
   background-color: #083d77;
   cursor: pointer;
@@ -714,22 +726,7 @@ main .mid-section .mid-boxes .mid-box-3 div {
   padding: 2rem 0;
 }
 main .mid-section .mid-boxes .mid-box-3 div i {
-  font-size: 12rem;
-}
-@media (max-width: 1000px) {
-  main .mid-section .mid-boxes .mid-box-3 div i {
-    font-size: 10rem;
-  }
-}
-@media (max-width: 800px) {
-  main .mid-section .mid-boxes .mid-box-3 div i {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 500px) {
-  main .mid-section .mid-boxes .mid-box-3 div i {
-    font-size: 4rem;
-  }
+  font-size: 10vw;
 }
 main .mid-section .mid-boxes .mid-box-3 .mid-box-text {
   padding: 2rem;
@@ -750,16 +747,11 @@ main .mid-section .mid-boxes .mid-box-3 .mid-box-text {
 }
 main .mid-section .mid-boxes .mid-box-3 .mid-box-text h3 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8vw;
   padding-bottom: 1rem;
 }
-@media (max-width: 1000px) {
-  main .mid-section .mid-boxes .mid-box-3 .mid-box-text h3 {
-    font-size: 2.5rem;
-  }
-}
 main .mid-section .mid-boxes .mid-box-3 .mid-box-text p {
-  font-size: 1.4rem;
+  font-size: 1vw;
   font-family: 'Montserrat', sans-serif;
 }
 main .mid-section .mid-boxes .mid-box-3 .btn {
@@ -769,6 +761,7 @@ main .mid-section .mid-boxes .mid-box-3 .btn {
 }
 main .mid-section .mid-boxes .mid-box-3 .btn button {
   margin: 2rem;
+  box-shadow: 0px 10px 10px 2px grey;
   display: block;
   background-color: #083d77;
   cursor: pointer;

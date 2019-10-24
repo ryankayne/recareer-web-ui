@@ -8,6 +8,15 @@ header {
         width: 100%;
         background-color: @metallic-seaweed;
 
+        @media @desktop {
+            height: 60rem;
+        }
+
+        @media @tablet {
+            height: 100vh;
+            flex-direction: column;
+        }
+
         
 
         .main-title {
@@ -22,22 +31,33 @@ header {
                 width: 48%;
             }
 
+            @media @tablet {
+                width: 70%;
+                padding: 0;
+                padding-top: 1%;
+                
+            }
+
             h1 {
                 font-family: @slabo;
-                font-size: 5rem;
+                font-size: 4vw;
                 line-height: 1.2;
+                
             }
 
             h2 {
                 font-family: @heebo;
-                font-size: 2rem;
+                font-size: 1.5vw;
                 padding-top: 2rem;
                 line-height: 1.7;
+
+
             }
 
             .CTA {
                 margin-top: 5%;
                 button {
+                    
                     .btn-design(@background, 220px, @primary);
                 }
             }
@@ -57,6 +77,22 @@ header {
                 max-height: 500px;
                 width: 100%;
                 height: auto;
+
+                @media @desktop {
+                    max-width: 450px;
+                    max-height: 450px;
+                    width: 100%;
+                    height: auto;
+                }
+
+                @media @tablet {
+                    max-width: 380px;
+                    max-height: 380px;
+                    width: 100%;
+                    height: auto;
+                    margin: 2%;
+                    margin-top: 4%;
+                }
             }
         }
 
@@ -107,6 +143,7 @@ main {
 
                         h2 {
                             font-family: @slabo;
+                            font-size: 3.5vw;
                         }
                     }
 
@@ -114,6 +151,7 @@ main {
 
                         h1{
                             font-family: @slabo;
+                            font-size: 3.5vw;
                         }
                     }
 
@@ -122,6 +160,7 @@ main {
                         button {
                             margin: 2rem;
                             .btn-design(@primary, 220px, white);
+                            box-shadow: 0px 10px 10px 2px grey;
                         }
                     } //ends .CTA
                 } // ends .CTA-left
@@ -145,6 +184,7 @@ main {
 
                         .Job1 {
                             width: 100%;
+                            
 
                             .flip-container {
                             
@@ -154,15 +194,24 @@ main {
                                 
                                     .front {
                                         
+                                        @media @mobile {
+                                            .fcenter();
+                                        }
+                                        
                                         .job1a {
                                             width: 40vw;
                                             height: auto;
                                             max-width: none;
                                             border-radius: 2rem;
+                                            box-shadow: 0px 10px 10px 2px grey;
 
                                             @media @tablet {
                                                 margin-top: 10%;
                                                 width: 45vw;
+                                            }
+
+                                            @media @mobile {
+                                                width: 70vw;
                                             }
                                             
                                         }
@@ -171,6 +220,7 @@ main {
                                             width: 40vw;
                                             height: auto;
                                             max-width: none;
+                                            box-shadow: 0px 10px 10px 2px grey;
 
                                             @media @tablet {
                                                 margin-top: 10%;
@@ -185,6 +235,7 @@ main {
                                             width: 40vw;
                                             height: auto;
                                             max-width: none;
+                                            box-shadow: 0px 10px 10px 2px grey;
 
                                             @media @tablet {
                                                 margin-top: 10%;
@@ -198,6 +249,7 @@ main {
                                             height: auto;
                                             max-width: none;
                                             border-radius: 2rem;
+                                            box-shadow: 0px 10px 10px 2px grey;
 
                                             @media @tablet {
                                                 margin-top: 10%;
@@ -216,7 +268,7 @@ main {
 
         .mid-section {
             .fcenter();
-            height: 70%;
+            height: 90vh;
             width: 100%;
             flex-direction: column;
             background-color: @metallic-seaweed;
@@ -229,7 +281,7 @@ main {
                 .fcenter();
                 
                 h2 {
-                    font-size: 4rem;
+                    font-size: 4.2vw;
                     font-family: @slabo;
                     color: @background;
                 }
@@ -277,19 +329,7 @@ main {
                         padding: 2rem 0;
 
                         i {
-                            font-size: 12rem;
-
-                            @media @desktop {
-                                font-size: 10rem;
-                            }
-
-                            @media @tablet {
-                                font-size: 6rem;
-                            }
-
-                            @media @mobile {
-                                font-size: 4rem;
-                            }
+                            font-size: 10vw;
 
                         }
                     }
@@ -312,19 +352,12 @@ main {
 
                         h3 {
                             text-align: center;
-                            font-size: 3rem;
+                            font-size: 2.8vw;
                             padding-bottom: 1rem;
 
-                            @media @desktop {
-                                font-size: 2.5rem;
-                            }
-
-                            @media @tablet {
-                                font-size: 2.2rem;
-                            }
                         }
                         p {
-                            font-size: 1.4rem;
+                            font-size: 1vw;
                             font-family: @montserrat;
                         }
                     }
@@ -339,6 +372,7 @@ main {
 
                         button {
                             margin: 2rem;
+                            box-shadow: 0px 10px 10px 2px grey;
                             .btn-design(@primary, 200px, @background);
                         }
                     }
@@ -365,19 +399,7 @@ main {
                         padding: 2rem 0;
                         
                         i {
-                            font-size: 12rem;
-
-                            @media @desktop {
-                                font-size: 10rem;
-                            }
-
-                            @media @tablet {
-                                font-size: 6rem;
-                            }
-
-                            @media @mobile {
-                                font-size: 4rem;
-                            }
+                            font-size: 10vw;
 
                         }
                     }
@@ -399,16 +421,12 @@ main {
                         
                         h3 {
                             text-align: center;
-                            font-size: 3rem;
+                            font-size: 2.8vw;
                             padding-bottom: 1rem;
 
-                            @media @desktop {
-                                font-size: 2.5rem;
-                            }
                         }
-
                         p {
-                            font-size: 1.4rem;
+                            font-size: 1vw;
                             font-family: @montserrat;
                         }
                     }
@@ -419,6 +437,7 @@ main {
 
                         button {
                             margin: 2rem;
+                            box-shadow: 0px 10px 10px 2px grey;
                             .btn-design(@primary, 200px, @background);
                         }
                     }
@@ -444,20 +463,7 @@ main {
                         padding: 2rem 0;
                         
                         i {
-                            font-size: 12rem;
-
-                            @media @desktop {
-                                font-size: 10rem;
-                            }
-
-                            @media @tablet {
-                                font-size: 6rem;
-                            }
-
-                            @media @mobile {
-                                font-size: 4rem;
-                            }
-
+                            font-size: 10vw;
                         }
 
                     }
@@ -479,15 +485,12 @@ main {
                         
                         h3 {
                             text-align: center;
-                            font-size: 3rem;
+                            font-size: 2.8vw;
                             padding-bottom: 1rem;
 
-                            @media @desktop {
-                                font-size: 2.5rem;
-                            }
                         }
                         p {
-                            font-size: 1.4rem;
+                            font-size: 1vw;
                             font-family: @montserrat;
                         }
                     }
@@ -498,6 +501,7 @@ main {
 
                         button {
                             margin: 2rem;
+                            box-shadow: 0px 10px 10px 2px grey;
                             .btn-design(@primary, 200px, @background);
                         }
                     }
