@@ -42,7 +42,7 @@ header {
             width: 50%;
             height: auto;
             
-            img {
+            .hero-img-1 {
                 max-width: 500px;
                 max-height: 500px;
                 width: 100%;
@@ -72,14 +72,14 @@ main {
             .CTA-banner {
                 .fcenter();
                 width: 90%;
-                height: 45rem;
+                height: 40rem;
                 margin: 5% 0;
                 background-color: white;
                 border-radius: 3rem;
                 box-shadow: 0px 10px 10px 2px grey;
 
                 .CTA-left {
-                    width:40%;
+                    width: 50%;
                     .fcenter();
                     flex-direction: column;
                     
@@ -109,27 +109,60 @@ main {
 
                 .CTA-right {
                     .cool-flip();
-                    width: 60%;
+                    .fcenter();
+                    justify-content: left;
+                    width: 50%;
                     flex-direction: row;
                     max-height: 50vh;
-                    .tshoot();
+                    
 
                     .job-photos {
                         .fcenter();
+                        
+
                         .Job1 {
-                            width: 50%;
+                            width: 100%;
 
-                            .job1a {
-                                width: 100%;
-                                height: auto;
-                            }
-                        }
+                            .flip-container {
+                            
 
-                        .Job2 {
-                            width: 50%;
+                                .flipper {
+                                    
+                                
+                                    .front {
+                                        
+                                        .job1a {
+                                            width: 40rem;
+                                            height: auto;
+                                            max-width: none;
+                                            border-radius: 2rem;
+                                            
+                                        }
 
-                            .job2a {
-                                width: 100%;
+                                        .job1b {
+                                            width: 50rem;
+                                            height: auto;
+                                            max-width: none;
+                                        }
+                                    }
+
+                                    .back {
+                                        
+                                        .job1a {
+                                            width: 50rem;
+                                            height: auto;
+                                            max-width: none;
+                                            
+                                        }
+
+                                        .job1b {
+                                            width: 40rem;
+                                            height: auto;
+                                            max-width: none;
+                                            border-radius: 2rem;
+                                        }
+                                    }                                
+                                }
                             }
                         }
 

@@ -249,7 +249,7 @@ header .hero-banner .hero-img {
   width: 50%;
   height: auto;
 }
-header .hero-banner .hero-img img {
+header .hero-banner .hero-img .hero-img-1 {
   max-width: 500px;
   max-height: 500px;
   width: 100%;
@@ -278,14 +278,14 @@ main .top .CTA-banner {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 45rem;
+  height: 40rem;
   margin: 5% 0;
   background-color: white;
   border-radius: 3rem;
   box-shadow: 0px 10px 10px 2px grey;
 }
 main .top .CTA-banner .CTA-left {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,10 +324,13 @@ main .top .CTA-banner .CTA-right {
   /* hide back of pane during swap */
   /* front pane, placed above back */
   /* back, initially hidden pane */
-  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  width: 50%;
   flex-direction: row;
   max-height: 50vh;
-  border: 2px solid black;
 }
 main .top .CTA-banner .CTA-right .flip-container {
   perspective: 500px;
@@ -368,17 +371,29 @@ main .top .CTA-banner .CTA-right .job-photos {
   align-items: center;
 }
 main .top .CTA-banner .CTA-right .job-photos .Job1 {
-  width: 50%;
-}
-main .top .CTA-banner .CTA-right .job-photos .Job1 .job1a {
   width: 100%;
+}
+main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front .job1a {
+  width: 40rem;
   height: auto;
+  max-width: none;
+  border-radius: 2rem;
 }
-main .top .CTA-banner .CTA-right .job-photos .Job2 {
-  width: 50%;
+main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .front .job1b {
+  width: 50rem;
+  height: auto;
+  max-width: none;
 }
-main .top .CTA-banner .CTA-right .job-photos .Job2 .job2a {
-  width: 100%;
+main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .back .job1a {
+  width: 50rem;
+  height: auto;
+  max-width: none;
+}
+main .top .CTA-banner .CTA-right .job-photos .Job1 .flip-container .flipper .back .job1b {
+  width: 40rem;
+  height: auto;
+  max-width: none;
+  border-radius: 2rem;
 }
 main .mid-section {
   display: flex;
@@ -628,7 +643,7 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 }
 .team-bios .team-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 90%;
@@ -642,6 +657,8 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Melissa .melissa {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
 }
 .team-bios .team-container .Melissa h3 {
   text-align: center;
@@ -650,6 +667,8 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Connor .connor {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
 }
 .team-bios .team-container .Connor h3 {
   text-align: center;
@@ -658,6 +677,8 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Brendan .brendan {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
 }
 .team-bios .team-container .Brendan h3 {
   text-align: center;
@@ -666,6 +687,8 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Gabriel .gabriel {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
 }
 .team-bios .team-container .Gabriel h3 {
   text-align: center;
@@ -674,6 +697,8 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Jeffrey .jeffrey {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
 }
 .team-bios .team-container .Jeffrey h3 {
   text-align: center;
@@ -682,6 +707,8 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Ryan .ryan {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
 }
 .team-bios .team-container .Ryan h3 {
   text-align: center;
