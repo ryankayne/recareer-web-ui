@@ -523,3 +523,72 @@ main .mid-banner .mid-banner-text p {
   font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
 }
+body {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+body .team-bios {
+  /* entire container, keeps perspective */
+  /* flip the pane when hovered */
+  /* flip speed goes here */
+  /* hide back of pane during swap */
+  /* front pane, placed above back */
+  /* back, initially hidden pane */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  flex-direction: column;
+  background-color: #f2f5ea;
+}
+body .team-bios .flip-container {
+  perspective: 1000px;
+}
+body .team-bios .flip-container:hover .flipper,
+body .team-bios .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+body .team-bios .flip-container,
+body .team-bios .front,
+body .team-bios .back {
+  width: 320px;
+  height: 480px;
+}
+body .team-bios .flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+body .team-bios .front,
+body .team-bios .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .team-bios .front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+body .team-bios .back {
+  transform: rotateY(180deg);
+}
+body .team-bios .team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 45rem;
+  margin: 5% 0;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 3rem;
+  box-shadow: 0px 10px 10px 2px grey;
+}
