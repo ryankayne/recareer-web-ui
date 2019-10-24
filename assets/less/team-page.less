@@ -2,14 +2,25 @@
     .team-bios {
         .cool-flip();
         .fcenter();
-        height: 70%;
+        flex-direction: column;
+        height: auto;
         width: 100%;
-        
         background-color: @background;
+
+        @media @mobile {
+            height: auto;
+        }
+
+        .teamTitle {
+            h1 {
+                font-family: @slabo;
+                margin-top: 5rem;
+            }
+        }
 
         .team-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             width: 90%;
@@ -19,9 +30,23 @@
             background-color: white;
             border-radius: 3rem;
             box-shadow: 0px 10px 10px 2px grey;
+
+            @media (min-width: 1550px){
+                height: 28rem;
+            }
+
+            @media @tablet {
+                padding: 3%;
+                height: 50rem;
+            }
+
+            @media @mobile {
+                height: 70rem;
+            }
             
             .Melissa {
-                
+                margin: 1%;
+
                 .melissa {
                     box-shadow: 0px 10px 10px 2px grey;
                     border: 1px solid black;
@@ -37,6 +62,7 @@
         
 
             .Connor {
+                margin: 1%;
                 
                 .connor {
                     box-shadow: 0px 10px 10px 2px grey;
@@ -53,6 +79,7 @@
         
 
             .Brendan {
+                margin: 1%;
                 
                 .brendan {
                     box-shadow: 0px 10px 10px 2px grey;
@@ -69,6 +96,7 @@
         
 
             .Gabriel {
+                margin: 1%;
                 
                 .gabriel {
                     box-shadow: 0px 10px 10px 2px grey;
@@ -85,6 +113,7 @@
         
 
             .Jeffrey {
+                margin: 1%;
                 
                 .jeffrey {
                     box-shadow: 0px 10px 10px 2px grey;
@@ -101,6 +130,7 @@
         
 
             .Ryan {
+                margin: 1%;
                 
                     .ryan {
                         box-shadow: 0px 10px 10px 2px grey;

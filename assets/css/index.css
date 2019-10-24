@@ -860,7 +860,8 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  flex-direction: column;
+  height: auto;
   width: 100%;
   background-color: #f2f5ea;
 }
@@ -897,9 +898,18 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .back {
   transform: rotateY(180deg);
 }
+@media (max-width: 500px) {
+  .team-bios {
+    height: auto;
+  }
+}
+.team-bios .teamTitle h1 {
+  font-family: 'Slabo 13px', serif;
+  margin-top: 5rem;
+}
 .team-bios .team-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 90%;
@@ -909,6 +919,25 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
   background-color: white;
   border-radius: 3rem;
   box-shadow: 0px 10px 10px 2px grey;
+}
+@media (min-width: 1550px) {
+  .team-bios .team-container {
+    height: 28rem;
+  }
+}
+@media (max-width: 800px) {
+  .team-bios .team-container {
+    padding: 3%;
+    height: 50rem;
+  }
+}
+@media (max-width: 500px) {
+  .team-bios .team-container {
+    height: 70rem;
+  }
+}
+.team-bios .team-container .Melissa {
+  margin: 1%;
 }
 .team-bios .team-container .Melissa .melissa {
   box-shadow: 0px 10px 10px 2px grey;
@@ -920,6 +949,9 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
   text-align: center;
   font-size: 2.5rem;
 }
+.team-bios .team-container .Connor {
+  margin: 1%;
+}
 .team-bios .team-container .Connor .connor {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
@@ -929,6 +961,9 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Connor h3 {
   text-align: center;
   font-size: 2.5rem;
+}
+.team-bios .team-container .Brendan {
+  margin: 1%;
 }
 .team-bios .team-container .Brendan .brendan {
   box-shadow: 0px 10px 10px 2px grey;
@@ -940,6 +975,9 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
   text-align: center;
   font-size: 2.5rem;
 }
+.team-bios .team-container .Gabriel {
+  margin: 1%;
+}
 .team-bios .team-container .Gabriel .gabriel {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
@@ -950,6 +988,9 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
   text-align: center;
   font-size: 2.5rem;
 }
+.team-bios .team-container .Jeffrey {
+  margin: 1%;
+}
 .team-bios .team-container .Jeffrey .jeffrey {
   box-shadow: 0px 10px 10px 2px grey;
   border: 1px solid black;
@@ -959,6 +1000,9 @@ main .mid-section .mid-boxes .mid-box-3 .btn button:hover {
 .team-bios .team-container .Jeffrey h3 {
   text-align: center;
   font-size: 2.5rem;
+}
+.team-bios .team-container .Ryan {
+  margin: 1%;
 }
 .team-bios .team-container .Ryan .ryan {
   box-shadow: 0px 10px 10px 2px grey;
