@@ -57,20 +57,18 @@ header {
 main {
     margin: 0 auto;
     width: 100%;
-    display: flex;
+    .fcenter();
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center; 
     
-    background-color: #9ece9a;
 
-        .mid-section {
+        .top {
             .fcenter();
             height: 70%;
             width: 100%;
             flex-direction: column;
             background-color: @background;
-
+        
             .CTA-banner {
                 .fcenter();
                 width: 90%;
@@ -103,23 +101,51 @@ main {
                     }
                 } //ends .CTA
             } // ends .CTA-banner
+        } // ends .top
+
+        .mid-section {
+            .fcenter();
+            height: 70%;
+            width: 100%;
+            flex-direction: column;
+            background-color: @metallic-seaweed;
+
+            .mid-heading {
+                width: 100%;
+                padding: 2rem;
+                margin: 4rem 0;
+                background-color: @metallic-seaweed;
+                .fcenter();
+                
+                h2 {
+                    font-size: 4rem;
+                    font-family: @slabo;
+                    color: @background;
+                }
+            }
 
             .mid-boxes {
                 .fcenter();
-                .tshoot();
-                width: 90%;
-                height: 50%;
+                
+                width: 100%;
+                padding-top: 4rem;
+                background-color: @background;
+                
                 
 
                 .mid-box-1 {
                     .fcenter();
                     flex-direction: column;
+                    width: 33%;
+                    min-width: 300px;
                     max-width: 470px;
+                    min-height: 500px;
                     max-height: 530px;
-                    .tshoot();
+
+                    
 
                     div {
-                        padding: 4rem 0;
+                        padding: 2rem 0;
 
                         i {
                             font-size: 12rem;
@@ -129,10 +155,13 @@ main {
 
                     .mid-box-text {
                         padding: 2rem;
+                        width: 325px;
+                        height: 237px;
 
                         h3 {
                             text-align: center;
                             font-size: 3rem;
+                            padding-bottom: 1rem;
                         }
                         p {
                             font-size: 1.4rem;
@@ -145,6 +174,7 @@ main {
 
                         button {
                             margin: 2rem;
+                            .btn-design(@primary, 200px, @background);
                         }
                     }
                     
@@ -153,12 +183,15 @@ main {
                 .mid-box-2 {
                     .fcenter();
                     flex-direction: column;
+                    width: 33%;
+                    min-width: 300px;
                     max-width: 470px;
+                    min-height: 500px;
                     max-height: 530px;
-                    .tshoot();
+                    
 
                     div {
-                        padding: 4rem 0;
+                        padding: 2rem 0;
                         
                         i {
                             font-size: 12rem;
@@ -168,10 +201,13 @@ main {
 
                     .mid-box-text {
                         padding: 2rem;
+                        width: 325px;
+                        height: 237px;
                         
                         h3 {
                             text-align: center;
                             font-size: 3rem;
+                            padding-bottom: 1rem;
                         }
 
                         p {
@@ -185,6 +221,7 @@ main {
 
                         button {
                             margin: 2rem;
+                            .btn-design(@primary, 200px, @background);
                         }
                     }
                 } //ends .mid-box-2
@@ -192,12 +229,15 @@ main {
                 .mid-box-3 {
                     .fcenter();
                     flex-direction: column;
+                    width: 33%;
+                    min-width: 300px;
                     max-width: 470px;
+                    min-height: 500px;
                     max-height: 530px;
-                    .tshoot();
+                    
 
                     div {
-                        padding: 4rem 0;
+                        padding: 2rem 0;
                         
                         i {
                             font-size: 12rem;
@@ -208,10 +248,13 @@ main {
 
                     .mid-box-text {
                         padding: 2rem;
+                        width: 325px;
+                        height: 237px;
                         
                         h3 {
                             text-align: center;
                             font-size: 3rem;
+                            padding-bottom: 1rem;
                         }
                         p {
                             font-size: 1.4rem;
@@ -224,6 +267,7 @@ main {
 
                         button {
                             margin: 2rem;
+                            .btn-design(@primary, 200px, @background);
                         }
                     }
                 } //ends .mid-box-3
@@ -233,9 +277,12 @@ main {
         .mid-banner {
             .tshoot();
             .fcenter();
-            width: 90%;
+            background-color: @dark-cerulian;
+            width: 100%;
+            height: 40rem;
 
-            div {
+            .mid-banner-text {
+                width: 90%;
 
                 p {
                     font-size: 2.5rem;
@@ -243,26 +290,4 @@ main {
                 }
             }
         } // ends .mid-banner
-
-        .skills-section {
-            .tshoot();
-
-
-            div {
-                h2 {
-
-                }
-            }
-
-            div {
-                h2 {
-
-                }
-            }
-            div {
-                h2 {
-
-                }
-            }
-        } //ends .skills-section
 } // ends main
