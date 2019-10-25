@@ -16,17 +16,22 @@
 
 <body>
     
-    <nav>
-        <a href="index.html">
-            <img src="#" />
-        </a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="team.html">Team</a>
-        <a href="">
-            <button>Login</button>
-        </a>
-    </nav>
+        <nav class="nav" id="nav">
+            <a href="/index.html" class="logo">
+                <img src="assets/imgs/icons/icon.png" alt="logo" />
+            </a>
+            <a href="#features">App Features</a>
+            <a href="#skills">Feature Skills</a>
+            <a href="/_pages/team.html"> Our Team</a>
+            <a href="_pages/about.html">About</a>
+            <a href="#contact">Contact</a>
+            <a href="">
+                <button class="button">Login</button>
+            </a>
+            <a href="" id="burger" class="icon" onclick="nav_burger()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
 
     <header>
         <div class="hero-banner">
@@ -139,9 +144,41 @@
         </section>        
 
     </main>
-    <footer>
-
-    </footer>
+    <footer class="footer">
+            <section>
+    
+            </section>
+    
+            <section id="contact" class="contact">
+                <h1>Share us your thoughts 😀</h1>
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <label for="email">What' your name?</label>
+                        <input id="email" type="text" placeholder="Michael Phelps Jr.">
+                        <span class="pure-form-message">This is a required field.</span>
+    
+                        <label for="password">What's your message?</label>
+                        <textarea id="message" type="text" placeholder="What's your favorite scary movie?"></textarea>
+                        <label for="state">Are you an employer</label>
+                        <select id="status">
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+    
+                        <button class="pure-button pure-button-primary">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+    
+            <section class="social-links">
+                <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com"><i class="fab fa-github-square"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            </section>
+            <p id="copyright">ReCareer ©, 1776 - 2019</p>
+            <hr>
+            <p>This site was built with LESS, GithubPages, & tears 😢</p>
+        </footer>
 </body>
 
 </html>
